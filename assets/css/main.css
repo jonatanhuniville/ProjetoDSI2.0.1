@@ -17,6 +17,7 @@
 		font-size: 100%;
 		font: inherit;
 		vertical-align: baseline;
+		background-color: #333333;
 	}
 
 	label.cadastro{
@@ -1658,7 +1659,7 @@
 	}
 
 	p {
-		margin: 0 0 2em 0;
+		margin: 0 0 1em 0;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -1730,7 +1731,9 @@
 	}
 
 	h5 {
-		font-size: 0.9em;
+		font-size: 1.50em;
+		color: white !important;
+		text-decoration: none !important;
 	}
 
 	h6 {
@@ -2225,7 +2228,7 @@
 		border-radius: 4px;
 		border: none;
 		border: solid 1px;
-		color: inherit;
+		color: #FFFFFF;
 		display: block;
 		outline: 0;
 		padding: 0 1em;
@@ -3710,7 +3713,7 @@
 		-webkit-justify-content: center;
 		-ms-justify-content: center;
 		justify-content: center;
-		background-image: url("../../images/banner.jpg");
+		/*background-image: url("../../images/banner.jpg");*/
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -3744,7 +3747,8 @@
 
 		#banner p {
 			color: rgba(255, 255, 255, 0.85);
-			font-size: 1.75em;
+			font-weight: 900;
+			font-size: 2.0em;
 		}
 
 	@-moz-keyframes more {

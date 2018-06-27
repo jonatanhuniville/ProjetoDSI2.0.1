@@ -33,10 +33,10 @@
 				<div class="inner">
 					<header>
 		<title</title>
-						<h1>Cadastro sua Empresa</h1>
+						<h1>Cadastre sua Empresa</h1>
 						<p>Bem vindo ao cadastro de empresas do Negócio Gente Grande</p>
 					</header>
-					<label>Por favor, digite o nome de sua empresa:</label>
+					<p><h5>Por favor, digite o nome de sua empresa:</h5></p>
 					 <input type="text" class="cadastro" id="cadastro" name="nomeEmpresa"><br>
 				</div>
 			</section>
