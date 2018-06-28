@@ -22,14 +22,13 @@
 		<!-- Nav -->
 			<nav id="menu">
 				<ul class="links">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="generic.html">Generic</a></li>
-					<li><a href="elements.html">Elements</a></li>
+					<li><a href="cadastroEmpresa.php">Cadastro de Empresa</a></li>
+					<li><a href="elements.html">Quem Somos</a></li>
 				</ul>
 			</nav>
 
 			<!-- Banner -->
-			<section id="banner">
+			<section id="banner2" class="wrapper style1">
 				<div class="inner">
 					<header>
 		<title</title>
@@ -37,12 +36,28 @@
 						<p>Bem vindo ao cadastro de empresas do Negócio Gente Grande</p>
 					</header>
 					<p><h5>Por favor, digite o nome de sua empresa:</h5></p>
-					 <input type="text" class="cadastro" id="cadastro" name="nomeEmpresa"><br>
+					<input type="text" class="cadastro" id="cadastro" name="nomeEmpresa"><br>
+					<p><h5>Agora por gentileza, informe o CNPJ:</h5></p>
+					<input type="text" class="cadastro" id="cadastro" name="cnjpEmpresa"><br>
+					<p><h5>Por fim, nos diga o ramo em que atua:</h5></p>
+					<select class="cadastro" id="cadastro" name="RamoEmpresa">
+						<option value="null"></option>
+						<option value="bebidas">Bebidas</option>
+						<option value="mobiliario">Mobiliário</option>
+						<option value="vestuario">Vestuário</option>
+						<option value="metalurgia">Metalúrgico</option>
+						<option value="mecanica">Mecânico</option>
+						<option value="veiculos">Veículos</option>
+						<option value="combustiveis">Combustíveis</option>
+						<option value="alimenticio">Alimentício</option>
+						<option value="transporte">Transportes</option>
+						<option value="turismo">Turismo</option>
+						<option value="saude">Saúde</option>
+						<option value="educacao">Educação</option>
+						<option value="lazer">Lazer</option>
+					</select>
 				</div>
-			</section>
-
-	
-	
+			</section>	
 		
 		<!-- Footer -->
 			<footer id="footer">
@@ -57,6 +72,13 @@
 				</div>
 			</footer>
 
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
 
 
 	</body>

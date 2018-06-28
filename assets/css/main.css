@@ -23,6 +23,7 @@
 	label.cadastro{
 		border-color: white;
 		background-color: white; 
+		color: white;
 	}
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -53,6 +54,11 @@
 
 	body {
 		-webkit-text-size-adjust: none;
+	}
+
+	select {
+		color: white !important;
+		background-color: #303030 !important;
 	}
 
 /* Box Model */
@@ -3783,6 +3789,10 @@
 			font-size: 4em;
 			margin-bottom: .25em;
 			color: #FFF;
+		}
+
+		#banner2 input {
+			color: #FFFFFF;
 		}
 
 		#banner2 p {

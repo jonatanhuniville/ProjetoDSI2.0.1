@@ -22,8 +22,7 @@
 		<!-- Nav -->
 			<nav id="menu">
 				<ul class="links">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="generic.html">Cadastro de Empresa</a></li>
+					<li><a href="cadastroEmpresa.php">Cadastro de Empresa</a></li>
 					<li><a href="elements.html">Quem Somos</a></li>
 				</ul>
 			</nav>
