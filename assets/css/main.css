@@ -19,7 +19,7 @@
 		vertical-align: baseline;
 		background-color: #333333;
 	}
-
+	
 	label.cadastro{
 		border-color: white;
 		background-color: white; 
@@ -3798,7 +3798,11 @@
 		#banner2 p {
 			color: rgba(255, 255, 255, 0.85);
 			font-weight: 900;
-			font-size: 1.5em;
+			font-size: 1.6em;
+		}
+
+		#banner2 .quemSomos {
+			font-size: 1.1em;
 		}
 
 	@-moz-keyframes more {

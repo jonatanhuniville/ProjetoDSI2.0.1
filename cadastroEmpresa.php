@@ -23,7 +23,7 @@
 			<nav id="menu">
 				<ul class="links">
 					<li><a href="cadastroEmpresa.php">Cadastro de Empresa</a></li>
-					<li><a href="elements.html">Quem Somos</a></li>
+					<li><a href="quemSomos.php">Quem Somos</a></li>
 				</ul>
 			</nav>
 
