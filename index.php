@@ -29,7 +29,7 @@
 			</nav>
 
 		<!-- Banner -->
-			<section id="banner">
+			<section id="banner2" class="wrapper style1">
 				<div class="inner">
 					<header>
 		<title</title>
