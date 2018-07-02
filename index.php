@@ -66,7 +66,7 @@
 										criação de um sistema de parceria, onde pode-se criar vínculos de negócios e
 										categorização de produtos para que pudesse mostrar o que interessa, para quem
 										interessa.</p>
-										<a href="cadastroEmpresa.php" class="button">Aprenda mais</a>
+										<a href="quemSomos.php" class="button">Aprenda mais</a>
 									</div>
 								</div>
 						</div>

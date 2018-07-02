@@ -56,6 +56,7 @@
 						<option value="educacao">Educação</option>
 						<option value="lazer">Lazer</option>
 					</select>
+					<a><input type="button" id="botaoCadastro" class="button big scrolly" value="Prosseguir"></a>
 				</div>
 			</section>	
 		
