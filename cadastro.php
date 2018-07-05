@@ -1,16 +1,19 @@
 <?php
-	require_once("databaseConnection.php");
-	class cadastro{
+	
+	require_once('conexao.php');
 
-		public __construct(){
+	$nomeEmpresa = $_REQUEST['nomeempresa'];
+	$cnpjEmpresa = $_REQUEST['cnpjempresa'];
+	$ramoEmpresa = $_REQUEST['ramoempresa'];
 
-			$connObj = new databaseConnection("dbprojetodsi201", "root", "univille");
+	$sql = "INSERT INTO EMPRESA (NOMEEMPRESA, CNPJEMPRESA, RAMOEMPRESA) VALUES ('$nomeEmpresa','$cnpjEmpresa', '$ramoEmpresa')";
 
-		}
-
-		public function clickCadastro(){
-				
-		}
-
+	if($conexao->query($sql) === TRUE){
+		echo "Usuário incluído com sucesso!";
+	}else{
+		echo "Erro: " .$sql."</br>".$conexao->error;
 	}
+
+	$conexao->close();
+
 ?>

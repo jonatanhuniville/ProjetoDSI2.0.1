@@ -33,30 +33,31 @@
 					<header>
 		<title</title>
 						<h1>Cadastre sua Empresa</h1>
-						<p>Bem vindo ao cadastro de empresas do Negócio Gente Grande</p>
-					</header>
-					<p><h5>Por favor, digite o nome de sua empresa:</h5></p>
-					<input type="text" class="cadastro" id="cadastro" name="nomeEmpresa"><br>
-					<p><h5>Agora por gentileza, informe o CNPJ:</h5></p>
-					<input type="text" class="cadastro" id="cadastro" name="cnjpEmpresa"><br>
-					<p><h5>Por fim, nos diga o ramo em que atua:</h5></p>
-					<select class="cadastro" id="cadastro" name="RamoEmpresa">
-						<option value="null"></option>
-						<option value="bebidas">Bebidas</option>
-						<option value="mobiliario">Mobiliário</option>
-						<option value="vestuario">Vestuário</option>
-						<option value="metalurgia">Metalúrgico</option>
-						<option value="mecanica">Mecânico</option>
-						<option value="veiculos">Veículos</option>
-						<option value="combustiveis">Combustíveis</option>
-						<option value="alimenticio">Alimentício</option>
-						<option value="transporte">Transportes</option>
-						<option value="turismo">Turismo</option>
-						<option value="saude">Saúde</option>
-						<option value="educacao">Educação</option>
-						<option value="lazer">Lazer</option>
-					</select>
-					<a><input type="button" id="botaoCadastro" class="button big scrolly" value="Prosseguir"></a>
+						<form action="cadastro.php" method="POST"><p>Bem vindo ao cadastro de empresas do Negócio Gente Grande</p>
+							</header>
+							<p><h5>Por favor, digite o nome de sua empresa:</h5></p>
+							<input type="text" class="cadastro" id="nomeempresa" name="nomeempresa"><br>
+							<p><h5>Agora por gentileza, informe o CNPJ:</h5></p>
+							<input type="text" class="cadastro" id="cnpjempresa" name="cnpjempresa"><br>
+							<p><h5>Por fim, nos diga o ramo em que atua:</h5></p>
+							<select class="cadastro" id="ramoempresa" name="ramoempresa">
+								<option value="null"></option>
+								<option value="bebidas">Bebidas</option>
+								<option value="mobiliario">Mobiliário</option>
+								<option value="vestuario">Vestuário</option>
+								<option value="metalurgia">Metalúrgico</option>
+								<option value="mecanica">Mecânico</option>
+								<option value="veiculos">Veículos</option>
+								<option value="combustiveis">Combustíveis</option>
+								<option value="alimenticio">Alimentício</option>
+								<option value="transporte">Transportes</option>
+								<option value="turismo">Turismo</option>
+								<option value="saude">Saúde</option>
+								<option value="educacao">Educação</option>
+								<option value="lazer">Lazer</option>
+							</select>
+							<a><input type="submit" id="botaoCadastro" class="button big scrolly" value="Prosseguir"></a>
+						</form>
 				</div>
 			</section>	
 		
