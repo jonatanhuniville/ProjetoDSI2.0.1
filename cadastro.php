@@ -10,6 +10,7 @@
 
 	if($conexao->query($sql) === TRUE){
 		echo "Usuário incluído com sucesso!";
+		phpinfo(); 
 	}else{
 		echo "Erro: " .$sql."</br>".$conexao->error;
 	}

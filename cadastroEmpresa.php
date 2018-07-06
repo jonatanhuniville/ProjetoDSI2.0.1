@@ -38,7 +38,9 @@
 							<p><h5>Por favor, digite o nome de sua empresa:</h5></p>
 							<input type="text" class="cadastro" id="nomeempresa" name="nomeempresa"><br>
 							<p><h5>Agora por gentileza, informe o CNPJ:</h5></p>
-							<input type="text" class="cadastro" id="cnpjempresa" name="cnpjempresa"><br>
+							<input type="text" pattern="\(\d{2}\)\d{4}-\d{4}" class="cadastro" id="cnpjempresa" name="cnpjempresa"><br>
+							<p><h5>Escolha uma senha:</h5></p>
+							<input type="password" class="cadastro" id="senhaempresa" name="senhaempresa" ><br>
 							<p><h5>Por fim, nos diga o ramo em que atua:</h5></p>
 							<select class="cadastro" id="ramoempresa" name="ramoempresa">
 								<option value="null"></option>
@@ -65,10 +67,7 @@
 			<footer id="footer">
 				<div class="copyright">
 					<ul class="icons">
-						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
 						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon fa-snapchat"><span class="label">Snapchat</span></a></li>
 					</ul>
 					<p>&copy; SOFTFELPS. All rights reserved. Design: Jonatan Henrique Freudenborg.</p>
 				</div>
