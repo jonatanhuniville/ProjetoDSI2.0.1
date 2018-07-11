@@ -29,7 +29,7 @@
 
 			<!-- Banner -->
 			<section id="banner2" class="wrapper style1">
-				<div class="inner">
+				<div class="inner" data-tip="This is the text of the tooltip2">
 					<header>
 		<title</title>
 						<h1>Cadastre sua Empresa</h1>
@@ -40,7 +40,7 @@
 							<p><h5>Agora por gentileza, informe o CNPJ:</h5></p>
 							<input type="text" pattern="\(\d{2}\)\d{4}-\d{4}" class="cadastro" id="cnpjempresa" name="cnpjempresa"><br>
 							<p><h5>Escolha uma senha:</h5></p>
-							<input type="password" class="cadastro" id="senhaempresa" name="senhaempresa" ><br>
+							<input type="password" class="tool" id="senhaempresa" name="senhaempresa" data-tip="Hyper Text Makeup Language" ><br>
 							<p><h5>Por fim, nos diga o ramo em que atua:</h5></p>
 							<select class="cadastro" id="ramoempresa" name="ramoempresa">
 								<option value="null"></option>

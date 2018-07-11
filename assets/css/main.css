@@ -19,6 +19,44 @@
 		vertical-align: baseline;
 		background-color: #333333;
 	}
+
+	div.tool {
+	  cursor : help;
+	  position : relative;
+	}
+	 
+	div.tool::before, div.tool::after {
+	  position : absolute;
+	  left : 50%;
+	  opacity : 0;
+	  z-index: -100;
+	}
+	 
+	div.tool:hover::before, div.tool:focus::before, div.tool:hover::after, div.tool:focus::after {
+	  opacity : 1;
+	  z-index: 100;
+	}
+	 
+	div.tool::before {
+	  border-style : solid;
+	  border-width : 1em .75em 0 .75em;
+	  border-color : #3e474f transparent transparent transparent;
+	  bottom : 100%;
+	  margin-left : -.5em;
+	  content : " ";
+	}
+	 
+	div.tool::after {
+	  background : #3e474f;
+	  border-radius : .25em;
+	  bottom : 180%;
+	  color : white;
+	  width : 17.5em;
+	  padding: 1em;
+	  margin-left : -8.75em;
+	  content : attr(data-tip);
+	}
+
 	
 	label.cadastro{
 		border-color: white;
