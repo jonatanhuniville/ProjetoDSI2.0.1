@@ -17,6 +17,8 @@
 		<!-- Nav -->
 			<nav id="menu">
 				<ul class="links">
+					<li><a href="#">Home</a></li>
+					<li><a href="loginEmpresa.php">Efetuar Login</a></li>
 					<li><a href="cadastroEmpresa.php">Cadastro de Empresa</a></li>
 					<li><a href="quemSomos.php">Quem Somos</a></li>
 				</ul>

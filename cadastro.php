@@ -7,32 +7,56 @@
 	$senhaEmpresa = $_REQUEST['senhaempresa'];
 	$ramoEmpresa = $_REQUEST['ramoempresa'];
 	$control = true;
-	$sql;
+	$erro = 0;
+	$sql = null;
 
 	if($nomeEmpresa == "" || $nomeEmpresa == null){
-		echo "Favor informar o nome da empresa.</br></br>";
-		$sql = false;
-		header('location:erro.php');
-	}else if($cnpjEmpresa == "" || $cnpjEmpresa == null){
-		echo "Favor informar o CNPJ da empresa.</br></br>";
-		$sql = false;
-		header('location:erro.php');
-	}else if($ramoEmpresa == "" || $ramoEmpresa == "null"){
-		echo "Favor informar o ramo da empresa.</br></br>";
-		$sql = false;
-		header('location:erro.php');
-	}else if($senhaEmpresa == "" || $senhaEmpresa == "null"){
-		echo "Favor informar a senha de sua empresa.</br></br>";
-		$sql = false;
-		header('location:erro.php');
-	}else{
-		$sql = "INSERT INTO EMPRESA (NOMEEMPRESA, CNPJEMPRESA, RAMOEMPRESA) VALUES ('$nomeEmpresa','$cnpjEmpresa', '$ramoEmpresa')";
+		?><script type="text/javascript">
+			alert("Favor informar o nome da empresa.")
+			window.location.href = "cadastroEmpresa.php";
+		</script><?php
+		$erro = 1;
 	}
 
-	if($sql){
-		echo "Usuário incluído com sucesso!";
+	if($cnpjEmpresa == "" || $cnpjEmpresa == null){
+		?><script type="text/javascript">
+			alert("Favor informar o CNPJ da empresa.")
+			window.location.href = "cadastroEmpresa.php";
+		</script><?php
+		$erro = 1;
+	}
+
+	if($ramoEmpresa == "" || $ramoEmpresa == "null"){
+		?><script type="text/javascript">
+			alert("Favor informar o ramo da empresa.")
+			window.location.href = "cadastroEmpresa.php";
+		</script><?php
+		$erro = 1;
+	}
+
+	if($senhaEmpresa == "" || $senhaEmpresa == null){
+		?><script type="text/javascript">
+			alert("Favor informar a senha de sua empresa.")
+			window.location.href = "cadastroEmpresa.php";
+		</script><?php
+		$erro = 1;
+	}
+
+	if($erro == 0){
+		$sql = "INSERT INTO EMPRESA (NMEMPRESA, CNPJEMPRESA, SENHAEMPRESA, RAMOEMPRESA) VALUES ('$nomeEmpresa','$cnpjEmpresa', '$senhaEmpresa', $ramoEmpresa')";
+		$conexao->query($sql);
+	}
+
+	if($sql != null){
+		?><script type="text/javascript">
+			alert("Usuário incluído com sucesso!.")
+			window.location.href = "cadastroSuccesso.php";
+		</script><?php
 	}else{
-		echo "Erro: Não foi possível incluir o cadastro.</br>";	
+		?><script type="text/javascript">
+			alert("Não foi possível efetuar o cadastro. Por favor tente novamente..")
+			window.location.href = "#";
+		</script><?php
 	}
 
 	$conexao->close();

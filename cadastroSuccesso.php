@@ -22,6 +22,8 @@
 		<!-- Nav -->
 			<nav id="menu">
 				<ul class="links">
+					<li><a href="index.php">Home</a></li>
+					<li><a href="loginEmpresa.php">Efetuar Login</a></li>
 					<li><a href="cadastroEmpresa.php">Cadastro de Empresa</a></li>
 					<li><a href="quemSomos.php">Quem Somos</a></li>
 				</ul>
@@ -32,9 +34,10 @@
 				<div class="inner">
 					<header>
 		<title</title>
-						<h1>Ops, ocorreu um erro!</h1>
-						<h5>Algum campo ficou em branco, por favor, verifique seu cadastro.</h5>
-						<a href="cadastroEmpresa.php"><input type="submit" id="botaoVoltar" class="button big scrolly" value="Voltar"></a>
+						<h1>Cadastro bem sucedido!</h1>
+						<h5>Agora você já pode efetuar login na conta de sua empresa e começar a cadastrar seus representantes!</h5>
+						<a href="index.php"><input type="submit" id="botaoVoltar" class="button big scrolly" value="Voltar para a Home"></a>
+						<a href="loginEmpresa.php"><input type="submit" id="botaoVoltar" class="button big scrolly" value="Efetuar login"></a>
 				</div>
 			</section>	
 		

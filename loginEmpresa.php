@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Negócio Gente Grande</title>
+		<title>Cadastro De Empresa</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -23,42 +23,29 @@
 			<nav id="menu">
 				<ul class="links">
 					<li><a href="index.php">Home</a></li>
-					<li><a href="loginEmpresa.php">Efetuar Login</a></li>
+					<li><a href="#">Efetuar Login</a></li>
 					<li><a href="cadastroEmpresa.php">Cadastro de Empresa</a></li>
-					<li><a href="elements.html">Quem Somos</a></li>
+					<li><a href="quemSomos.php">Quem Somos</a></li>
 				</ul>
 			</nav>
 
-		<!-- Banner -->
+			<!-- Banner -->
 			<section id="banner2" class="wrapper style1">
-				<div class="inner">
+				<div class="inner" data-tip="This is the text of the tooltip2">
 					<header>
 		<title</title>
-						<h1>Quem Somos</h1>
-						<p>Negócio Gente Grande, uma ferramenta simples para vendas e negociações comerciais.</p>
-					</header>
-						<div class="quemSomos">
-							<p class="quemSomos">O sistema Negócio de Gente Grande é uma plataforma de vendas on-line
-							para empresas de todos os tipos. A ideia geral é de que os mais diversos
-							empreendedores possam colocar suas marcas e produtos a mostra para o público
-							em geral, ou com algum interesse em específico. Ao mesmo tempo, também serve
-							para que haja interação por parte dos negociantes. Do mais simples comerciante a
-							procura de aquisição de produtos mais baratos ou simplesmente uma diversidade
-							maior de fornecedores, até grandes corporações que buscam novos clientes ou
-							expandir o seu nome. Com possíveis acordos de negócios, visa-se também a
-							criação de um sistema de parceria, onde pode-se criar vínculos de negócios e
-							categorização de produtos para que pudesse mostrar o que interessa, para quem
-							interessa.</p>
-						</div>
-					<a href="cadastroEmpresa.php"><input type="button" class="button big scrolly" value="Cadastre Sua Empresa"></a>
+						<h1>Login de Empresa</h1>
+						<form action="cadastro.php" method="POST"><p>Bem vindo ao sistema Negócio Gente Grande</p>
+							</header>
+							<p><h5>Por favor, digite o login de sua empresa:</h5></p>
+							<input type="text" class="cadastro" id="nomeempresa" name="nomeempresa"><br>
+							<p><h5>Agora por gentileza, informe sua senha:</h5></p>
+							<input type="text" pattern="\d{14}" class="cadastro" id="cnpjempresa" name="cnpjempresa"><br>
+							<a><input type="submit" id="botaoCadastro" class="button big scrolly" value="Prosseguir"></a>
+						</form>
 				</div>
-			</section>
-
-		<!-- Main -->
-			<div id="main">
-
-			</div>
-
+			</section>	
+		
 		<!-- Footer -->
 			<footer id="footer">
 				<div class="copyright">
@@ -76,6 +63,7 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
 
 	</body>
 </html>
