@@ -37,8 +37,8 @@
 							</header>
 							<p><h5>Por favor, digite o nome de sua empresa:</h5></p>
 							<input type="text" class="cadastro" id="nomeempresa" name="nomeempresa"><br>
-							<p><h5>Agora por gentileza, informe o CNPJ:</h5></p>
-							<input type="text" pattern="\(\d{2}\)\d{4}-\d{4}" class="cadastro" id="cnpjempresa" name="cnpjempresa"><br>
+							<p><h5>Agora por gentileza, informe o CNPJ (apenas números):</h5></p>
+							<input type="text" pattern="\d{14}" class="cadastro" id="cnpjempresa" name="cnpjempresa"><br>
 							<p><h5>Escolha uma senha:</h5></p>
 							<input type="password" class="tool" id="senhaempresa" name="senhaempresa" data-tip="Hyper Text Makeup Language" ><br>
 							<p><h5>Por fim, nos diga o ramo em que atua:</h5></p>
@@ -67,7 +67,7 @@
 			<footer id="footer">
 				<div class="copyright">
 					<ul class="icons">
-						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.facebook.com/jonatan.henrique.12" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
 					</ul>
 					<p>&copy; SOFTFELPS. All rights reserved. Design: Jonatan Henrique Freudenborg.</p>
 				</div>

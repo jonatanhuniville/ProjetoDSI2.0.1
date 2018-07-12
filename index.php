@@ -45,7 +45,7 @@
 								<div class="flex flex-2">
 									<div class="col col1">
 										<div class="image round fit">
-											<a href="generic.html" class="link"><img src="images/handshake.jpg" alt="" /></a>
+											<a href="quemSomos.php" class="link"><img src="images/handshake.jpg" alt="" /></a>
 										</div>
 									</div>
 									<div class="col col2">
@@ -73,7 +73,7 @@
 			<footer id="footer">
 				<div class="copyright">
 					<ul class="icons">
-						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.facebook.com/jonatan.henrique.12" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
 					</ul>
 					<p>&copy; SOFTFELPS. All rights reserved. Design: Jonatan Henrique Freudenborg.</p>
 				</div>

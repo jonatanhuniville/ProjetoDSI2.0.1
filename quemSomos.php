@@ -61,7 +61,7 @@
 			<footer id="footer">
 				<div class="copyright">
 					<ul class="icons">
-						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.facebook.com/jonatan.henrique.12" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
 					</ul>
 					<p>&copy; SOFTFELPS. All rights reserved. Design: Jonatan Henrique Freudenborg.</p>
 				</div>
