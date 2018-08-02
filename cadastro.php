@@ -43,11 +43,13 @@
 	}
 
 	if($erro == 0){
-		$sql = "INSERT INTO EMPRESA (NMEMPRESA, CNPJEMPRESA, SENHAEMPRESA, RAMOEMPRESA) VALUES ('$nomeEmpresa','$cnpjEmpresa', '$senhaEmpresa', $ramoEmpresa')";
+		$sql = "INSERT INTO EMPRESA (NMEMPRESA, CNPJEMPRESA, SENHAEMPRESA, RAMOEMPRESA) VALUES ('$nomeEmpresa','$cnpjEmpresa', '$senhaEmpresa', '$ramoEmpresa')";
 		$conexao->query($sql);
 	}
+	
+	$aux = mysqli_error_list($conexao);
 
-	if($sql != null){
+	if(empty($aux)){
 		?><script type="text/javascript">
 			alert("Usuário incluído com sucesso!.")
 			window.location.href = "cadastroSuccesso.php";
@@ -55,6 +57,7 @@
 	}else{
 		?><script type="text/javascript">
 			alert("Não foi possível efetuar o cadastro. Por favor tente novamente..")
+			alert(teste);
 			window.location.href = "#";
 		</script><?php
 	}
