@@ -6,7 +6,6 @@
 	$cnpjEmpresa = $_REQUEST['cnpjempresa'];
 	$senhaEmpresa = $_REQUEST['senhaempresa'];
 	$ramoEmpresa = $_REQUEST['ramoempresa'];
-	$control = true;
 	$erro = 0;
 	$sql = null;
 

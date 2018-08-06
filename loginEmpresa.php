@@ -40,8 +40,8 @@
 							<p><h5>Por favor, digite o login de sua empresa:</h5></p>
 							<input type="text" class="cadastro" id="nomeempresa" name="nomeempresa"><br>
 							<p><h5>Agora por gentileza, informe sua senha:</h5></p>
-							<input type="text" pattern="\d{14}" class="cadastro" id="cnpjempresa" name="cnpjempresa"><br>
-							<a><input type="submit" id="botaoCadastro" class="button big scrolly" value="Prosseguir"></a>
+							<input type="password" class="cadastro" id="senhaempresa" name="senhaempresa"><br>
+							<a><input type="submit" id="botaoLogin" class="button big scrolly" value="Login"></a>
 						</form>
 				</div>
 			</section>	
