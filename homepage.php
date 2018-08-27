@@ -15,7 +15,7 @@
 
 		<!-- Header -->
 			<header id="header" class="alt">
-				<div class="logo"><a href="index.html"></a></div>
+				<a><?=filter_input(INPUT_GET, "iduser");?></a>
 				<a href="#menu">Menu</a>
 			</header>
 
@@ -23,9 +23,8 @@
 			<nav id="menu">
 				<ul class="links">
 					<li><a href="index.php">Home</a></li>
-					<li><a href="#">Efetuar Login</a></li>
-					<li><a href="cadastroEmpresa.php">Cadastro de Empresa</a></li>
 					<li><a href="quemSomos.php">Quem Somos</a></li>
+					<li><a href="index.php">Deslogar</a></li>
 				</ul>
 			</nav>
 
@@ -36,12 +35,7 @@
 		<title</title>
 						<h1>Login de Empresa</h1>
 						<form action="login.php" method="POST"><p>Bem vindo ao sistema Negócio Gente Grande</p>
-							</header>
-							<p><h5>Por favor, digite o login de sua empresa:</h5></p>
-							<input type="text" class="cadastro" id="nomeempresa" name="nomeempresa"><br>
-							<p><h5>Agora por gentileza, informe sua senha:</h5></p>
-							<input type="password" class="cadastro" id="senhaempresa" name="senhaempresa"><br>
-							<a><input type="submit" id="botaoLogin" class="button big scrolly" value="Login"></a>
+							
 						</form>
 				</div>
 			</section>	

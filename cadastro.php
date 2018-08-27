@@ -42,7 +42,7 @@
 	}
 
 	if($erro == 0){
-		$sql = "INSERT INTO EMPRESA (NMEMPRESA, CNPJEMPRESA, SENHAEMPRESA, RAMOEMPRESA) VALUES ('$nomeEmpresa','$cnpjEmpresa', '$senhaEmpresa', '$ramoEmpresa')";
+		$sql = "INSERT INTO EMPRESA (NMEMPRESA, CNPJEMPRESA, SENHAEMPRESA, RAMOEMPRESA) VALUES (UPPER('$nomeEmpresa'),'$cnpjEmpresa', UPPER('$senhaEmpresa'), UPPER('$ramoEmpresa'))";
 		$conexao->query($sql);
 	}
 	
@@ -55,12 +55,11 @@
 		</script><?php
 	}else{
 		?><script type="text/javascript">
-			alert("Não foi possível efetuar o cadastro. Por favor tente novamente..")
+			alert("Não foi possível efetuar o cadastro. Por favor tente novamente.")
 			alert(teste);
 			window.location.href = "#";
 		</script><?php
 	}
 
 	$conexao->close();
-
 ?>
