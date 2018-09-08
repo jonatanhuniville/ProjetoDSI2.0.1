@@ -25,7 +25,7 @@
 	}
 
 	if($erro == 0){
-		$sql = "SELECT * FROM EMPRESA WHERE NMEMPRESA = UPPER('$nomeEmpresa') AND SENHAEMPRESA = UPPER('$senhaEmpresa')";
+		$sql = "SELECT * FROM EMPRESA WHERE NOMEEMPRESA = UPPER('$nomeEmpresa') AND SENHAEMPRESA = UPPER('$senhaEmpresa')";
 		$result = $conexao->query($sql);
 		$aux = $result->num_rows;
 	}

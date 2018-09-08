@@ -1,3 +1,13 @@
+<?php
+	if(isset($_REQUEST['nomeempresa']) && $_REQUEST['nomeempresa'] != null){
+		error_log(print_r($_REQUEST['nomeempresa'], true));
+		error_log(print_r("teste", true));
+	}else{
+		error_log(print_r($_REQUEST['nomeempresa'], true));
+		error_log(print_r("teste2", true));
+		header("location:login.php");
+	}
+?>
 <!DOCTYPE HTML>
 <!--
 	Urban by TEMPLATED
@@ -15,7 +25,6 @@
 
 		<!-- Header -->
 			<header id="header" class="alt">
-				<a><?=filter_input(INPUT_GET, "iduser");?></a>
 				<a href="#menu">Menu</a>
 			</header>
 
