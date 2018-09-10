@@ -1,4 +1,13 @@
-<!DOCTYPE HTML>
+<?php
+	if(isset($_REQUEST['iduser'])){
+		?>
+		<script type="text/javascript">
+			alert("Você já está logado. Saindo de sua conta para efetuar um novo login.");
+			window.location.href = "loginEmpresa.php";
+		</script>
+		<?php
+	}
+?><!DOCTYPE HTML>
 <!--
 	Urban by TEMPLATED
 	templated.co @templatedco

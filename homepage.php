@@ -1,11 +1,13 @@
 <?php
-	if(isset($_REQUEST['nomeempresa']) && $_REQUEST['nomeempresa'] != null){
-		error_log(print_r($_REQUEST['nomeempresa'], true));
-		error_log(print_r("teste", true));
-	}else{
-		error_log(print_r($_REQUEST['nomeempresa'], true));
-		error_log(print_r("teste2", true));
-		header("location:login.php");
+	if(!isset($_REQUEST['iduser'])){
+		?>
+		<script type="text/javascript">
+			alert("Por favor, efetuar login!");
+			window.location.href = "loginEmpresa.php";
+		</script>
+		<?php
+	} else {
+		$user = $_REQUEST['iduser'];
 	}
 ?>
 <!DOCTYPE HTML>
@@ -25,6 +27,7 @@
 
 		<!-- Header -->
 			<header id="header" class="alt">
+				<a><?php echo $user;?></a>
 				<a href="#menu">Menu</a>
 			</header>
 

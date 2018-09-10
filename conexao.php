@@ -1,5 +1,5 @@
 <?php
-	$conexao = mysqli_connect('localhost', 'root', '', 'dbprojetodsi201');
+	$conexao = mysqli_connect('localhost', 'root', 'univille', 'dbprojetodsi201');
 
 	mysqli_set_charset($conexao, 'utf8');
 

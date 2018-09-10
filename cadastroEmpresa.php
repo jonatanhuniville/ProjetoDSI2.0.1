@@ -1,4 +1,13 @@
-<!DOCTYPE HTML>
+<?php
+	if(isset($_REQUEST['iduser'])){
+		?>
+		<script type="text/javascript">
+			alert("Por favor, deslogue para efetuar um cadastro de uma nova empresa!");
+			window.location.href = "loginEmpresa.php";
+		</script>
+		<?php
+	}
+?><!DOCTYPE HTML>
 <!--
 	Urban by TEMPLATED
 	templated.co @templatedco

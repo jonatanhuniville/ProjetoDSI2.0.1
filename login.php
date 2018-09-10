@@ -1,8 +1,16 @@
 <?php
 	require_once('conexao.php');
 
+	session_start([
+    'cookie_lifetime' => 86400,
+    'read_and_close'  => true,
+]);
+
 	$nomeEmpresa = $_REQUEST['nomeempresa'];
 	$senhaEmpresa = $_REQUEST['senhaempresa'];
+	$_SESSION['iduser'] = $nomeEmpresa;//$_SESSION com valor certo
+	$_SESSION['password'] = $senhaEmpresa;//$_SESSION com valor certo
+
 	$erro = 0;
 	$sql = null;
 	$aux = null;

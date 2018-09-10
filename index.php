@@ -1,4 +1,10 @@
-<!DOCTYPE HTML>
+<?php
+	if(!isset($_REQUEST['iduser'])){
+		$user = null;
+	} else {
+		$user = $_REQUEST['iduser'];
+	}
+?><!DOCTYPE HTML>
 <html>
 	<head>
 		<title>Negócio Gente Grande</title>
@@ -11,6 +17,7 @@
 		<!-- Header -->
 			<header id="header" class="alt">
 				<div class="logo"><a href="index.html"></a></div>
+				<a><?php echo $user;?></a>
 				<a href="#menu">Menu</a>
 			</header>
 
