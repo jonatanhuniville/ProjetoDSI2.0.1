@@ -1,5 +1,12 @@
 <?php
-	if(isset($_REQUEST['iduser'])){
+
+	require_once("validateLoggedUser.php");
+	
+	$validation = new validateLoggedUser();
+	
+	$user = isset($_REQUEST['iduser']) ? $validation->validateUser($_REQUEST['iduser']): $validation->validateUser();
+	
+	if(isset($user)){
 		?>
 		<script type="text/javascript">
 			alert("Você já está logado. Saindo de sua conta para efetuar um novo login.");

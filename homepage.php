@@ -1,13 +1,17 @@
 <?php
-	if(!isset($_REQUEST['iduser'])){
+	require_once("validateLoggedUser.php");
+	
+	$validation = new validateLoggedUser();
+	
+	$user = isset($_REQUEST['iduser']) ? $validation->validateUser($_REQUEST['iduser']): $validation->validateUser();
+
+	if(!isset($user)){
 		?>
 		<script type="text/javascript">
 			alert("Por favor, efetuar login!");
 			window.location.href = "loginEmpresa.php";
 		</script>
 		<?php
-	} else {
-		$user = $_REQUEST['iduser'];
 	}
 ?>
 <!DOCTYPE HTML>

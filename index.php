@@ -1,9 +1,10 @@
 <?php
-	if(!isset($_REQUEST['iduser'])){
-		$user = null;
-	} else {
-		$user = $_REQUEST['iduser'];
-	}
+	require_once("validateLoggedUser.php");
+	
+	$validation = new validateLoggedUser();
+
+	$user = isset($_REQUEST['iduser']) ? $validation->validateUser($_REQUEST['iduser']): $validation->validateUser();
+
 ?><!DOCTYPE HTML>
 <html>
 	<head>

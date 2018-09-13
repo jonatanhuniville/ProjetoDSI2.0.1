@@ -1,4 +1,12 @@
-<!DOCTYPE HTML>
+<?php
+
+	require_once("validateLoggedUser.php");
+	
+	$validation = new validateLoggedUser();
+	
+	$user = isset($_REQUEST['iduser']) ? $validation->validateUser($_REQUEST['iduser']): $validation->validateUser();
+
+?><!DOCTYPE HTML>
 <!--
 	Urban by TEMPLATED
 	templated.co @templatedco
@@ -16,6 +24,7 @@
 		<!-- Header -->
 			<header id="header" class="alt">
 				<div class="logo"><a href="index.html"></a></div>
+				<a><?php echo $user;?></a>
 				<a href="#menu">Menu</a>
 			</header>
 

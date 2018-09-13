@@ -1,9 +1,16 @@
 <?php
-	if(isset($_REQUEST['iduser'])){
+
+	require_once("validateLoggedUser.php");
+	
+	$validation = new validateLoggedUser();
+	
+	$user = isset($_REQUEST['iduser']) ? $validation->validateUser($_REQUEST['iduser']): $validation->validateUser();
+
+	if(isset($user)){
 		?>
 		<script type="text/javascript">
 			alert("Por favor, deslogue para efetuar um cadastro de uma nova empresa!");
-			window.location.href = "loginEmpresa.php";
+			window.location.href = "#";
 		</script>
 		<?php
 	}

@@ -13,7 +13,7 @@
 		?><script type="text/javascript">
 			alert("Favor informar o nome da empresa.")
 			window.location.href = "cadastroEmpresa.php";
-		</script><?php
+		</script><?php'
 		$erro = 1;
 	}
 
